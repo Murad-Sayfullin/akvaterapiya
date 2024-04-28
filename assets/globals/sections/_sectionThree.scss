@@ -1,0 +1,113 @@
+.sectionThree{
+    position: relative;
+
+    &-row{
+        margin-top: 100px;
+
+        &__top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-title{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 58.8px;
+                text-align: center;
+                color: #fff;
+            }
+        }
+
+        &__bottom{
+            
+            margin-top: 100px;
+
+            
+
+            &-bottom{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 84px;
+                margin-top: 100px;
+                @include media (1024){
+                    flex-direction: column-reverse;
+                }
+
+                &-title{
+                    font-size: 24px;
+                    font-weight: 700;                    
+                    line-height: 33.6px;
+                    color: #fff;
+
+                    @include media (1024){
+                        text-align: center;   
+                      }
+                }
+
+                &-span{
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 22.4px;
+                    text-align: left;
+                    color: #FFFFFF;
+
+                    @include media (1024){
+                        text-align: center;   
+                      }
+                }
+
+                &-right{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                 }
+            }
+
+            &-top{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 84px;
+
+                @include media (1024){
+                    flex-direction: column;
+                }
+
+                &-title{
+                    font-size: 24px;
+                    font-weight: 700;                    
+                    line-height: 33.6px;
+                    text-align: left;
+                    color: #fff;
+
+                    @include media (1024){
+                        text-align: center;   
+                      }
+                }
+
+                &-span{
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 22.4px;
+                    text-align: left;
+                    color: #FFFFFF;
+
+                    @include media (1024){
+                      text-align: center;   
+                    }
+                }
+
+                &-left{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;                 
+                 }
+            
+             }
+      }
+  }
+}

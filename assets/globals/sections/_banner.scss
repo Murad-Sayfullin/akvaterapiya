@@ -1,0 +1,80 @@
+.main-banner{
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        position: relative;
+
+        &-img{
+            width: 100%;
+        }
+
+
+
+        &-span{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            position: absolute;
+            color: #fff;
+            top: 150px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 33.6px; 
+
+
+            @include media (1160){
+                font-size: 20px;
+            }
+
+            @include media (1024){
+                font-size: 15px;
+                line-height: normal;
+                gap: 30px;
+            }
+            @include media (888){
+                font-size: 13px;
+                gap: 25px;
+            }
+
+            @include media (768){
+                top: 140px;
+                font-size: 8px;
+            }
+       
+        }
+
+        &-title{
+            display: flex;
+            position: absolute;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 89.6px;
+            text-align: center; 
+            color: #fff;
+
+            @include media (1160){
+                font-size: 40px;
+                line-height: inherit;
+            }
+
+            @include media (1024){
+                font-size: 30px;
+
+            }
+
+            @include media (950){
+                font-size: 25px;
+            }
+
+            @include media (888){
+                font-size: 20px;
+            }
+
+            @include media (768){
+                font-size: 13px;
+            }
+        }
+    }
+}
